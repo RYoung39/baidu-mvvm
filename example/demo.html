@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p>111{{info.msg+'---'}}222</p>
+            <p v-text="info.msg"></p>
+            <input type="text" v-model="info.msg">
+        </div>
+        <script>
+            const vm=new Vue({
+                el:'#app',
+                data:{
+                    info:{
+                        msg:'hello'
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
